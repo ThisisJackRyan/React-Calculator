@@ -1,23 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import CalcButtons from './CalculatorButtons';
-import _ from 'lodash';
+
 
 
 function App() {
-  let buttons = [];
-    _.times(8, (i) => {
-      buttons.push(<CalcButtons num={i} />);
-    });
+
+  const [number, setNumber] = useState();
+
   return (
     <div className="App">
-      <div>Output</div>
-      <div>
-        <div>{buttons}</div>
-      </div>
+        <div className="flex center">
+          <div>{number}</div>
+        </div>
+        <div>
+          <div className="flex center">
+            <CalcButtons num={7} />
+            <CalcButtons num={8} />
+            <CalcButtons num={9} />
+            <CalcButtons num={"/"} />
+          </div>
+          <div className="flex center">
+            <CalcButtons num={4} />
+            <CalcButtons num={5} />
+            <CalcButtons num={6} />
+            <CalcButtons num={"*"} />
+          </div>
+          <div className="flex center">
+            <CalcButtons num={1} />
+            <CalcButtons num={2} />
+            <CalcButtons num={3} />
+            <CalcButtons num={"-"} />
+          </div>
+          <div className="flex center">
+            <CalcButtons num={0} />
+            <CalcButtons num={"ente"} />
+            <CalcButtons num={"+"} />
+            
+          </div>
+        </div>
+
+
     </div>
   )
 }
+
 
 export default App;
 

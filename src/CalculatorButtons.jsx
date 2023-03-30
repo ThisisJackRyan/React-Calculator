@@ -1,12 +1,13 @@
 import React from "react";
-
 const CalculatorButtons = ({num}) => {
     const log = (i) =>{
         console.log(i + " This is the number you clicked.")
     }
+    
+    
     return (
-        <div>
-            <button onClick={log(num)}>{num}</button>
+        <div className="">
+            <button onClick={log(num)} className="btn" >{num}</button>
         </div>
     )
 }

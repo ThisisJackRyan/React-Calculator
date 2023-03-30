@@ -1,0 +1,19 @@
+button {
+    font-family: monospace;
+}
+
+.App{
+    justify-content: center;
+}
+
+.btn{
+    background-color: red;
+}
+
+.flex{
+    display: flex;
+}
+
+.center{
+    justify-content: center;
+}
