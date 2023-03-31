@@ -11,11 +11,11 @@ function App() {
   return (
     <div className="App">
         <div className="flex center">
-          <div>{number}</div>
+          <div>Output: { number ? (number) : ("no Number")}</div>
         </div>
         <div>
           <div className="flex center">
-            <CalcButtons num={7} />
+            <CalcButtons num={8} />
             <CalcButtons num={8} />
             <CalcButtons num={9} />
             <CalcButtons num={"/"} />
